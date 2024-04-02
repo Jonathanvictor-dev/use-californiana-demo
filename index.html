@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Use Californiana</title>
+</head>
+<body>
+
+    <header class="container-header">
+        <div class="header-img">
+            <img src="img/logoUC.svg" alt="Logo da Use Californina">
+        </div>
+
+        <nav class="header-nav">
+            <a href="#" id="abrir-carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="indice-carrinho">1</span>
+            </a>
+            <span class="header-nav-preco">R$ 00,00</span>
+        </nav>
+    </header>
+
+    <section class="container-carrinho hidden">
+        
+        <div class="carrinho-titulo-e-btn">
+            <h2 class="titulo-carrinho">
+                Suas compras
+            </h2>
+            <span id="fechar-carrinho">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </span>
+        </div>
+        
+        <div class="carrinho-itens">
+            <div class="carrinho-info">
+                <div class="carrinho-img">
+                    <img src="img/noImage.png" alt="imagem do produto">
+                </div>
+
+                <div class="card-info-produto">
+                    <h3 class="card-titulo">
+                        Blusa Longa 
+                    </h3>
+                    <p class="card-preco">
+                        R$ 59,90
+                    </p>
+                </div>
+
+                <div class="carrinho-qnt">
+                    <p id="qtd-item">
+                        Qtd: 01
+                    </p>
+                </div>               
+            </div>
+        </div>
+
+        <div class="carrinho-preco-total">
+            <p class="carrinho-total">
+                <span class="carrinho-preco-total"></span>
+            </p>
+        </div>
+
+        <div class="container-finalizar-pedido">
+            <input type="submit" value="Finalizar" id="finalizar-pedido">
+        </div>
+
+    </section>
+
+    <section class="container-categoria">
+        <div class="container-categoria-pesquisa">
+            <h3 class="categoria-titulo">
+                Categorias
+            </h3>
+            <div class="container-input-pesquisa">
+                <input type="search" id="input-pesquisa" placeholder="Pesquisar">
+                <span class="icon-pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>           
+        </div>
+        <ul class="lista-categorias">
+            <li class="itens-lista-categorias active" id="botao-limpar-filtro">Todas</li>
+            <li class="itens-lista-categorias" name="blusa">Blusa</li>
+            <li class="itens-lista-categorias" name="Vestido">Vestido</li>
+            <li class="itens-lista-categorias" name="conjunto">Conjuntos</li>
+            <li class="itens-lista-categorias" name="calças">Calças</li>
+            <li class="itens-lista-categorias" name="macaquito">Macaquinho</li>
+            <li class="itens-lista-categorias" name="moda praia">Moda Praia</li>
+        </ul>
+    </section>
+
+    <main class="container-main">
+
+    </main>
+
+    <div class="container-btn-abrir-carrinho hidden">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <footer class="container-footer">
+        <div class="footer-redes-sociais"> 
+            <h3 class="footer-titulo">
+                Redes sociais
+            </h3>
+            <li id="whatsapp">
+                <a href="https://api.whatsapp.com/send?text=Olá,%20tenho%20uma%20dúvida!"><i class="fa-brands fa-whatsapp"></i></i><span class="whatsapp">Whatsapp</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/use.californiana/?ref=TellMeMirror&hl=pt"><i class="fa-brands fa-instagram"></i><span class="instagram">Instagram</span></i></a>
+            </li>
+        </div>
+
+        <div class="footer-contatos">
+            <h3 class="footer-titulo">
+                Contatos
+            </h3>
+            <li class="footer-item-lista">
+                <i class="fa-solid fa-phone"></i>
+                <span>(82) 99831-3115</span>
+            </li>
+            <li class="footer-item-lista">
+                <i class="fa-solid fa-envelope"></i>
+                <span>usecaliforniana@gmail.com</span>
+            </li>
+        </div>
+        
+        <div class="formas-pagamento">
+            <h3 class="footer-titulo">
+                Formas de pagamento
+            </h3>
+            <li class="footer-item-lista">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Cartão de crédito/Débtio</span>
+            </li>
+            <li class="footer-item-lista">
+                <i class="fa-brands fa-pix"></i>
+                <span>PIX</span>
+            </li>
+            <li class="footer-item-lista">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span>Dinheiro</span>
+            </li>
+        </div>
+    </footer>
+
+    <script src="./apps/main.js"></script>
+    <script src="./apps/produtos.js"></script>
+    <script src="apps/detalhe-produto.js"></script>
+    <script src="apps/carrinho.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ const listaDeProdutos = [
         img1: 'img/blusa-feminina-rosa.jpg',
         img2: 'img/blusa-feminina-rosa.jpg',
         alt: 'Blusa de manga curta',
-        titulo: 'Camisa Curta',
+        titulo: 'Blusa Curta',
         descricao:'Clique para ver os tamanhos e cores disponíveis.',
         preco: 49.90,
         tamanho: 'P',

@@ -54,6 +54,11 @@ div.info-item-img img {
     color: var(--bg-color-secundary);
     padding: 0.7rem;
   }
+
+  .prev-btn:hover,
+  .next-btn:hover {
+    opacity: 0.8;
+  }
   
   .prev-btn {
     left: 0;
